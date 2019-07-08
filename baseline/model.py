@@ -73,7 +73,6 @@ class DataGenerator(FeatureExtractor):
                 sub_id = dataset.get_object_id(sub_name)
                 pred_id = dataset.get_predicate_id(pred_name)
                 obj_id = dataset.get_object_id(obj_name)
-                # print(triplet, sub_id, pred_id, obj_id)
                 _train_triplet_id[(sub_id, pred_id, obj_id)] = i
 
             self.short_rel_insts = defaultdict(list)
